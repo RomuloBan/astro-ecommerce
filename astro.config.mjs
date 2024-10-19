@@ -6,6 +6,7 @@ import solidJs from '@astrojs/solid-js';
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'hybrid',
   site: 'https://astro-app-romu.netlify.app',
   integrations: [react(), solidJs()]
 });
