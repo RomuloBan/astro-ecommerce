@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import heroImg from '../images/sandwich-hero.jpg';
+import ShopItems from '../components/shop-items.astro';
 ---
 <Layout title="Welcome to Astro.">
 	<section class="block hero">
@@ -19,6 +20,11 @@ import heroImg from '../images/sandwich-hero.jpg';
 			decoding="async" 
 			alt="A sandwich on a plate. This sandwhich is taco."
 		/>
+	</section>
+
+	<section class="block products">
+		<ShopItems count={3} addToCart={false} />
+		<p class="shop-link"><a href="/shop">Shop All Sandwich Kits &rarr;</a></p>
 	</section>
 </Layout>
 <style>
