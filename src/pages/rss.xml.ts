@@ -1,12 +1,12 @@
-import type { AstroConfig } from "astro";
+
 import { getCollection } from "astro:content";
 import rss from '@astrojs/rss';
-import sanitizeHtm from "sanitize-html"
+import sanitizeHtml from "sanitize-html"
 import MarkdownIt from "markdown-it"
 
 const parser = new MarkdownIt();
 
-export async function GET(context: AstroConfig) {
+export async function GET(context: any) {
   const posts = await getCollection("blog");
   return rss({
     title: 'The sndwch blog',
