@@ -1,8 +1,8 @@
 import type { AstroConfig } from "astro";
 import { getCollection } from "astro:content";
 import rss from '@astrojs/rss';
-import sanitizeHtml from 'sanitize-html';
-import MarkdownIt from 'markdown-it';
+import sanitizeHtm from "sanitize-html"
+import MarkdownIt from "markdown-it"
 
 const parser = new MarkdownIt();
 
