@@ -6,10 +6,12 @@ import solidJs from '@astrojs/solid-js';
 
 import netlify from '@astrojs/netlify';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
   output: 'hybrid',
   site: 'https://astro-app-romu.netlify.app',
   integrations: [react(), solidJs()],
-  adapter: netlify()
+  adapter: cloudflare()
 });
