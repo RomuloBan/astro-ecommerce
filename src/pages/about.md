@@ -11,4 +11,6 @@ Forget the labels. You don’t need to stand alone. Explore a new world of joyfu
 
 Because when you’re here, just about everything can be a sandwich.
 
+Take a piece of taste.
+
 Join us. [Shop now &rarr;](/shop)
